@@ -1,8 +1,3 @@
-import React from 'react';
-import { Text } from 'react-native';
+import Container from './Container';
 
-export default function TodoList() {
-	return (
-		<Text>Nice to meet you !</Text>
-	)
-}
+export default Container; 
