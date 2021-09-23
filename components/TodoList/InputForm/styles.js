@@ -24,5 +24,8 @@ export default StyleSheet.create({
 	}, 
 	cancel: {
 		flex: 1,
+	},
+	errorBorder: {
+		borderColor: colors.RED,
 	}
 });

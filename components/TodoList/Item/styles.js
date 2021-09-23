@@ -14,7 +14,7 @@ export default StyleSheet.create({
 		marginBottom: 10,
 	},
 	itemText: {
-		flex: 6,
+		flex: 7,
 	},
 	title: {
 		fontSize: fonts.title.fontSize,
@@ -25,9 +25,13 @@ export default StyleSheet.create({
 		fontWeight: fonts.description.fontWeight,
 	},
 	editIcon: {
-		flex: 1,
+		flex: 2,
 	},
 	checkIcon: {
 		flex: 1,
+	},
+	ignore: {
+		textDecorationLine: "line-through",
+		opacity: 0.3,
 	}
 });

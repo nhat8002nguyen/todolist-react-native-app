@@ -7,7 +7,7 @@ import ToggleableForm from '../ToggleableForm';
 
 
 export default function Container(props) {
-	const [openedFormId, setOpenedFormId] = useState(123);
+	const [openedFormId, setOpenedFormId] = useState(null);
 	const [isFormOpen, setFormOpen] = useState(false);
 
 	const openEditedForm = (id) => {
@@ -27,12 +27,14 @@ export default function Container(props) {
 
 	return (
 		<View style={styles.container}>
-			<EditableList {...props} 
+			<EditableList 
+				{...props} 
 				openedFormId={openedFormId} 
 				onEditedFormOpen={openEditedForm}
 				onCancel={cancelAddForm}
 			/>
 			<ToggleableForm 
+				{...props}
 				isFormOpen={isFormOpen} 
 				onFormOpen={openAddForm}
 				onCancel={cancelAddForm}
